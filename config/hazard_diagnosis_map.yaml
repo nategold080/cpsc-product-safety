@@ -1,0 +1,111 @@
+# Mapping between recall hazard types and expected NEISS injury diagnoses
+# Used for hazard validation: do NEISS injuries match recall hazard descriptions?
+
+hazard_diagnosis_map:
+  Fire Hazard:
+    expected_diagnoses:
+      - Burns - Thermal
+      - Burns - Scald
+      - Burns - Chemical
+      - Burns - Not Specified
+    neiss_diagnosis_codes: [41, 42, 43, 48]
+
+  Electrical Shock Hazard:
+    expected_diagnoses:
+      - Burns - Electrical
+      - Electric Shock
+    neiss_diagnosis_codes: [46, 56]
+
+  Burn Hazard:
+    expected_diagnoses:
+      - Burns - Thermal
+      - Burns - Scald
+      - Burns - Chemical
+      - Burns - Electrical
+      - Burns - Radiation
+      - Burns - Not Specified
+    neiss_diagnosis_codes: [41, 42, 43, 46, 47, 48]
+
+  Laceration Hazard:
+    expected_diagnoses:
+      - Laceration
+      - Amputation
+      - Avulsion
+      - Hemorrhage
+    neiss_diagnosis_codes: [61, 71, 73, 60]
+
+  Choking Hazard:
+    expected_diagnoses:
+      - Aspiration
+      - Ingested Foreign Object
+      - Anoxia
+    neiss_diagnosis_codes: [67, 66, 68]
+
+  Fall Hazard:
+    expected_diagnoses:
+      - Fracture
+      - Contusions/Abrasions
+      - Concussions
+      - Strain/Sprain
+      - Dislocation
+    neiss_diagnosis_codes: [58, 50, 49, 65, 54]
+
+  Entrapment Hazard:
+    expected_diagnoses:
+      - Crushing
+      - Amputation
+      - Contusions/Abrasions
+    neiss_diagnosis_codes: [72, 71, 50]
+
+  Poisoning Hazard:
+    expected_diagnoses:
+      - Poisoning
+      - Burns - Chemical
+      - Ingested Foreign Object
+    neiss_diagnosis_codes: [63, 43, 66]
+
+  Tip-Over Hazard:
+    expected_diagnoses:
+      - Fracture
+      - Contusions/Abrasions
+      - Concussions
+      - Internal Organ Injury
+      - Crushing
+    neiss_diagnosis_codes: [58, 50, 49, 69, 72]
+
+  Strangulation Hazard:
+    expected_diagnoses:
+      - Anoxia
+      - Submersion
+    neiss_diagnosis_codes: [68, 74]
+
+  Drowning Hazard:
+    expected_diagnoses:
+      - Drowning
+      - Submersion
+      - Anoxia
+    neiss_diagnosis_codes: [55, 74, 68]
+
+  Impact Hazard:
+    expected_diagnoses:
+      - Fracture
+      - Contusions/Abrasions
+      - Concussions
+      - Internal Organ Injury
+      - Hematoma
+    neiss_diagnosis_codes: [58, 50, 49, 69, 59]
+
+  Puncture Hazard:
+    expected_diagnoses:
+      - Puncture
+      - Laceration
+      - Foreign Body
+    neiss_diagnosis_codes: [64, 61, 57]
+
+  Explosion Hazard:
+    expected_diagnoses:
+      - Burns - Thermal
+      - Burns - Not Specified
+      - Fracture
+      - Laceration
+    neiss_diagnosis_codes: [41, 48, 58, 61]

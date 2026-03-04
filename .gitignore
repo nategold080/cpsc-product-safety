@@ -1,0 +1,19 @@
+# Raw data (large, re-downloadable)
+data/raw/*.csv
+data/raw/*.tsv
+data/raw/*.json
+data/raw/*.zip
+data/raw/*.xlsx
+
+# Database
+data/*.db
+data/*.db-wal
+data/*.db-shm
+
+# Exports (regeneratable)
+data/exports/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/

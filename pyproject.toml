@@ -1,0 +1,9 @@
+[project]
+name = "cpsc-product-safety"
+version = "1.0.0"
+description = "Cross-linked CPSC product recall, incident, injury, and penalty tracker"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
